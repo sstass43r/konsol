@@ -29,3 +29,14 @@ if (hamburgerTwo === 3 && cola  === 2 || friesTwo === 3 && nuggets) {
 }
 
 console.log(hamburgerTwo === 3 && cola  === 2 || friesTwo === 3 && nuggets);
+
+
+let hamburger3;
+const fries3 = NaN;
+const cola3 = 0;
+const nuggets3 = 2;
+
+
+if (hamburger || cola || fries === 3 || nuggets) {
+   console.log('Done!')
+}
