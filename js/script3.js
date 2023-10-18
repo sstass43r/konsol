@@ -1,14 +1,14 @@
 // логические операторы
-"use strict";
+'use strict';
 
 // 1
 const hamburger = 2;
 const fries = 1;
 
 if (hamburger === 3 && fries) {
-    console.log('Все сыты!')
+	console.log('Все сыты!')
 } else {
-    console.log('Мы уходим')
+	console.log('Мы уходим')
 }
 
 // 2
@@ -20,15 +20,15 @@ console.log(johnReport || alexReport || samReport || mariaReport);
 const hamburgerTwo = 3;
 const friesTwo = 3;
 const cola = 0;
-const nuggets = 2; 
+const nuggets = 2;
 
-if (hamburgerTwo === 3 && cola  === 2 || friesTwo === 3 && nuggets) {
-    console.log('Все сыты!')
+if (hamburgerTwo === 3 && cola === 2 || friesTwo === 3 && nuggets) {
+	console.log('Все сыты!')
 } else {
-    console.log('Мы уходим')
+	console.log('Мы уходим')
 }
 
-console.log(hamburgerTwo === 3 && cola  === 2 || friesTwo === 3 && nuggets);
+console.log(hamburgerTwo === 3 && cola === 2 || friesTwo === 3 && nuggets);
 
 
 let hamburger3;
@@ -38,5 +38,5 @@ const nuggets3 = 2;
 
 
 if (hamburger || cola || fries === 3 || nuggets) {
-   console.log('Done!')
+	console.log('Done!')
 }
