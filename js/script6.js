@@ -12,18 +12,37 @@ const personalMovieDB = {
 
 
 
-for (let i = 0; i < 2; i++) {
-	const a = prompt('Один из последних просмотренных фильмов?', '');
-	b = prompt('На сколько оцените его?', '');
+// for (let i = 0; i < 2; i++) {
+// 	const a = prompt('Один из последних просмотренных фильмов?', '');
+// 	b = prompt('На сколько оцените его?', '');
 
-	if (a != null && b != null && a != '' && b != '' && a.length < 50 && !isNaN(parseFloat(b))) {
-		personalMovieDB.movies[a] = b;
+// 	if (a != null && b != null && a != '' && b != '' && a.length < 50 && !isNaN(parseFloat(b))) {
+// 		personalMovieDB.movies[a] = b;
+// 		console.log('все ок');
+// 	} else {
+// 		console.log('error');
+// 		i--;
+// 	}
+// }
+
+// while
+let i = 0;
+
+while (i < 2) {
+	const a = prompt('Один из последних просмотренных фильмов?', '');
+	let b = prompt('На сколько оцените его?', '');
+
+	if (a !== null && b !== null && a !== '' && b !== '' && a.length < 50 && !isNaN(parseFloat(b))) {
+		personalMovieDB.movies[a] = +b;
 		console.log('все ок');
 	} else {
 		console.log('error');
 		i--;
 	}
+
+	i++;
 }
+//
 
 if (personalMovieDB.count < 10) {
 	console.log('Мало фильмов');
@@ -38,4 +57,7 @@ else {
 	console.log('Произошла ошибка');
 }
 
-console.log(personalMovieDB.);
+console.log(personalMovieDB);
+
+
+
